@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/edit.css">
+    <title>Post Edit</title>
+</head>
+<body>
+    <h1>Edit Blog Post</h1>
+    <div class="container">
+        <form>
+            <div>
+                  <label for="title">Title: </label>
+                <input name="title" type="text" value="{{post.title}}"> 
+            </div>
+          
+            <div>
+                <label for="text">Text: </label>
+            <textarea cols="75" rows="30" name="text">{{post.text}}</textarea>
+            </div>
+            <div class="buttons">
+                <button>Save Changes</button>
+                <button>Reset</button>
+                <button>Delete Post</button>
+            </div>
+        </form>
+    </div>
+   
+</body>
+</html>

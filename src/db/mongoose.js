@@ -1,3 +1,4 @@
+// /c/Program\ Files/MongoDB/Server/4.4/bin/mongod.exe --dbpath=/c/Program\ Files/
 const mongoose = require('mongoose')
 
 mongoose.connect(process.env.MONGODB_URL, {
