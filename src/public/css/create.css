@@ -1,0 +1,11 @@
+body form {
+  margin-left: 2rem;
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-columns: row;
+}
+
+button {
+  width: 100px;
+}

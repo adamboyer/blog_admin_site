@@ -9,6 +9,10 @@
 </head>
 <body>
     <h1>Blog Editor</h1>
+    <form action="http://127.0.0.1:3000/create" method="get">
+        <button id="add_post">Create Post</button>
+    </form>
+    
     <ul>
         {{#posts}}
         <li id={{_id}}>

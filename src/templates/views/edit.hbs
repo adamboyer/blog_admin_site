@@ -9,24 +9,25 @@
 </head>
 <body>
     <h1>Edit Blog Post</h1>
-    <div class="container">
-        <form>
+    <div class="container" id="{{post._id}}">
+        <form id="edit_form">
             <div>
                   <label for="title">Title: </label>
-                <input name="title" type="text" value="{{post.title}}"> 
+                <input id="title_input" name="title" type="text" value="{{post.title}}"> 
             </div>
           
             <div>
                 <label for="text">Text: </label>
-            <textarea cols="75" rows="30" name="text">{{post.text}}</textarea>
+            <textarea id="text_input" cols="75" rows="30" name="text">{{post.text}}</textarea>
             </div>
             <div class="buttons">
-                <button>Save Changes</button>
-                <button>Reset</button>
-                <button>Delete Post</button>
+                <button form="edit_form" id="save_changes">Save Changes</button>
+                <button form="edit_form" id="reset">Reset</button>
+                <button form="edit_form" id="delete_post">Delete Post</button>
+                <button form="edit_form" id="exit">Exit Editor</button>
             </div>
         </form>
     </div>
-   
+   <script src="/js/edit.js"></script>
 </body>
 </html>

@@ -2,6 +2,7 @@ const express = require('express')
 const request = require('request')
 const router = new express.Router()
 const hbs = require('hbs')
+const { post } = require('request')
 
 
 router.get('', (req, res) => {
@@ -22,6 +23,10 @@ router.get('/edit/:postId', (req, res) => {
         }
         res.render('edit', {post: body})
     })
+})
+
+router.get('/create', (req, res) => {
+    res.render('create')
 })
 
 module.exports = router
